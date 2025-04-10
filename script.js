@@ -163,6 +163,7 @@ async function displayPokemonData(pokemon) {
     pokemonImage.src = pokemon.sprites.other['official-artwork'].front_default;
     pokemonImage.alt = pokemon.name;
     pokemonName.textContent = pokemon.name;
+    pokemonName.className = `type-${pokemon.types[0].type.name}`;
 
     pokemonTypes.innerHTML = '';
     pokemon.types.forEach(type => {
