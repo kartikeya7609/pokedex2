@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pokedex</h1>
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <input type="text" id="search-input" placeholder="Search Pokemon...">
+                    <div class="suggestions-dropdown" id="suggestions-dropdown"></div>
+                </div>
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="pokedex-container">
+                <div class="pokemon-card">
+                    <div class="pokemon-image">
+                        <img id="pokemon-image" src="" alt="Pokemon">
+                    </div>
+                    <div class="pokemon-info">
+                        <h2 id="pokemon-name">Select a Pokemon</h2>
+                        <div class="pokemon-types" id="pokemon-types"></div>
+                        <div class="pokemon-description" id="pokemon-description">-</div>
+                        <div class="pokemon-stats">
+                            <div class="stat">
+                                <span>Height:</span>
+                                <span id="pokemon-height">-</span>
+                            </div>
+                            <div class="stat">
+                                <span>Weight:</span>
+                                <span id="pokemon-weight">-</span>
+                            </div>
+                            <div class="stat">
+                                <span>Abilities:</span>
+                                <span id="pokemon-abilities">-</span>
+                            </div>
+                        </div>
+                        <div class="pokemon-evolutions">
+                            <h3>Evolutions</h3>
+                            <div class="evolution-chain" id="evolution-chain"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="related-pokemon">
+                <h3>Related Pokemon</h3>
+                <div class="related-pokemon-container" id="related-pokemon-container"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
